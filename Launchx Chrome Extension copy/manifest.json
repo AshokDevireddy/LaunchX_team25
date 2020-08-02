@@ -1,0 +1,37 @@
+{
+    "name": "Getting Startedd Example",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": ["activeTab", "declarativeContent", "storage", "tabs",
+  "notifications",
+  "http://*/",
+  "https://*/"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/bingo16.png",
+		"32": "images/bingo32.png",
+		"48": "images/bingo48.png",
+      	"128": "images/bingo128.png"
+      }
+    },
+    "icons": {
+      "16": "images/bingo16.png",
+      "32": "images/bingo32.png",
+      "48": "images/bingo48.png",
+      "128": "images/bingo128.png"
+    },
+	"content_scripts": [
+		{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://www.instacart.com/*"]
+  		}
+	],
+    "options_page": "options.html",
+    "manifest_version": 2
+  }
