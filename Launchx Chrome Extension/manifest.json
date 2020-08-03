@@ -29,8 +29,21 @@
   },
   {
     "js": ["content2.js"],
-    "matches": ["https://www.instacart.com/try-express"]
+    "matches": ["https://www.instacart.com/onboarding"]
+  },
+  {
+    "js": ["content3.js"],
+    "matches": ["https://www.instacart.com/store/*/storefront*"]
+  },
+  {
+    "js": ["content4.js"],
+    "matches": ["https://www.instacart.com/store/*/search_v3/*"]
+  },
+  {
+    "js": ["content5.js"],
+    "matches": ["https://www.instacart.com/store/items/*"]
   }
+
 ],
     "options_page": "options.html",
     "manifest_version": 2
