@@ -1,19 +1,22 @@
 {
     "name": "Bingo",
     "version": "1.0",
-    "description": "Bingo!",
-    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "description": "Bingo will overlay helpful graphics and images over Instacart to help guide you through the website",
+    "permissions": ["activeTab", "declarativeContent", "storage", "tabs",
+  "notifications",
+  "http://*/",
+  "https://*/", "webNavigation"],
     "background": {
       "scripts": ["background.js"],
-      "persistent": false
+      "persistent": true
     },
     "browser_action": {
       "default_popup": "popup.html",
       "default_icon": {
         "16": "images/bingo16.png",
-        "32": "images/bingo32.png",
-        "48": "images/bingo48.png",
-        "128": "images/bingo128.png"
+		"32": "images/bingo32.png",
+		"48": "images/bingo48.png",
+      	"128": "images/bingo128.png"
       }
     },
     "icons": {
@@ -23,28 +26,12 @@
       "128": "images/bingo128.png"
     },
 	"content_scripts": [
-    {    
-    "js": ["content1.js"],
-    "matches": ["https://www.instacart.com/"]
-  },
-  {
-    "js": ["content2.js"],
-    "matches": ["https://www.instacart.com/onboarding"]
-  },
-  {
-    "js": ["content3.js"],
-    "matches": ["https://www.instacart.com/store/*/storefront*"]
-  },
-  {
-    "js": ["content4.js"],
-    "matches": ["https://www.instacart.com/store/*/search_v3/*"]
-  },
-  {
-    "js": ["content5.js"],
-    "matches": ["https://www.instacart.com/store/items/*"]
-  }
-
-],
+		{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://www.instacart.com/*"]
+  		}
+	],
     "options_page": "options.html",
     "manifest_version": 2
   }

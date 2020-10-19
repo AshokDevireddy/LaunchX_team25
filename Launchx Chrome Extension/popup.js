@@ -1,4 +1,4 @@
-let changeColor = document.getElementById('changeColor');
+/*let changeColor = document.getElementById('changeColor');
 
 chrome.storage.sync.get('color', function(data) {
   changeColor.style.backgroundColor = data.color;
@@ -12,4 +12,4 @@ changeColor.onclick = function(element) {
           tabs[0].id,
           {code: 'document.body.style.backgroundColor = "' + color + '";'});
     });
-  };
+  };*/

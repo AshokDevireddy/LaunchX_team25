@@ -1,4 +1,4 @@
-body {
+/*body {
   background: url('https://media.giphy.com/media/3o7WTDJQVuYwhhuLhC/giphy.gif') !important;
 }
  
@@ -15,4 +15,23 @@ body {
 #masthead img, #primary img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
+}*/
+
+body {
+	opacity: 1;
 }
+
+#header {
+	
+}
+
+
+/*div.wp-caption {
+   position: relative;
+   display: block;
+}
+.wp-caption a[href$=".jpg"]:hover:before {
+   content: url(magnify.png);
+   position: absolute;
+   right: 20px;
+   top: 20px;*/
